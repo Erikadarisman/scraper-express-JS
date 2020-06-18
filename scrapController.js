@@ -6,7 +6,7 @@ var Xray = require('x-ray');
 var x = Xray();
 
 exports.welcome = function(req, res){
-    response.ok('welcome in note app with express js', res);
+    response.ok('welcome in Scrap app with express js', res);
 }
 
 exports.getAllPage = function(req, res){
@@ -18,8 +18,7 @@ exports.getAllPage = function(req, res){
 
     }])(function (err, data) {
         // console.log(zdata);
-        
-        return res.json(data)
+        response.ok(data,res)
     })
     
 
